@@ -1,3 +1,5 @@
+/* Setup */
+
 *,
 *:after,
 *:before {
@@ -33,6 +35,9 @@ main {
 }
 
 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 25px;
   width: 25px;
 }
@@ -45,17 +50,15 @@ nav {
 
 a {
   display: flex;
-  width: 50px;
-  height: 5vh;
-  margin-top: 10px;
+  width: 60px;
+  height: 7vh;
   padding: 10px;
   border-bottom: 1px solid lightgray;
 }
 
 #search-bar {
-  height: 5vh;
+  height: 7vh;
   width: 100%;
-  margin: 10px 0;
   border-top: none;
 }
 
@@ -72,20 +75,34 @@ a {
   width: 10px;
 }
 
+
+/* Background Images */
 .menu {
   background: url(images/menu.svg) no-repeat center;
-  background-size: contain;
+  background-size: 20px 20px;
 }
 
 .add-user {
   background: url(images/add-user.svg) no-repeat center;
-  background-size: contain;
+  background-size: 25px 25px;
+  background-color: #139FF5
 }
 .calendar {
   background: url(images/calendar.svg) no-repeat center;
-  background-size: contain;
+  background-size: 20px 20px;
 }
 .more-options {
   background: url(images/more-options.svg) no-repeat center;
-  background-size: contain;
+  background-size: 20px 20px;
+}
+
+/* Hovers */
+
+.calendar:hover {
+  background-color: #139FF5;
+  background-image: url()
+}
+
+.more-options:hover {
+  background-color: #139FF5
 }
