@@ -15,22 +15,9 @@ body {
   margin: 0;
 }
 
-aside {
-  background-color: #354052;
-  display: flex;
-  height: 100vh;
-  width: 200px;
-}
-
-header {
-  display: flex;
-  height: 20vh;
-  width: 100%;
-}
-
 main {
   display: flex;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
 }
 
@@ -42,24 +29,56 @@ img {
   width: 25px;
 }
 
-nav {
+/* Top Navigation */
+
+header {
   display: flex;
+  flex-wrap: wrap;
+  height: 40vh;
   width: 100%;
-  height: 5vh;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 
 a {
+  border-bottom: 1px solid lightgray;
   display: flex;
-  width: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
   height: 7vh;
   padding: 10px;
-  border-bottom: 1px solid lightgray;
+  width: 60px;
 }
 
 #search-bar {
   height: 7vh;
   width: 100%;
   border-top: none;
+}
+
+#search-bar::-webkit-input-placeholder {
+color: #BEC1C6;
+}
+
+i#search-bar:-moz-placeholder { /* Firefox 18- */
+color: #BEC1C6;
+}
+
+#search-bar::-moz-placeholder {  /* Firefox 19+ */
+color: #BEC1C6;
+}
+
+#search-bar:-ms-input-placeholder {
+color: #BEC1C6;
+}
+
+.top-nav {
+  display: flex;
+  width: 100%;
+  height: 7vh;
 }
 
 .user-tools {
@@ -75,34 +94,333 @@ a {
   width: 10px;
 }
 
+.job-title {
+  display: flex;
+  flex-wrap: wrap;
+  height: 33vh;
+  width: 100%;
+}
+
+.job-title-options {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+.job-title-options button {
+  background-color: white;
+  border: 3px solid #DDD;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.sub-nav {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+/* Current User */
+
+aside {
+  background-color: #354052;
+  display: flex;
+  flex-wrap: wrap;
+  height: 150vh;
+  width: 250px;
+}
+
+.current-user {
+  box-shadow: 0px 0px 5px #000;
+  display: flex;
+  flex-wrap: wrap;
+  height: 15%;
+  width: 100%;
+  align-items: center;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+}
+
+.current-user img {
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  margin: 0 auto;
+  width: 100px;
+}
+
+figcaption {
+  color: #9BA6B8;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.arrow-down {
+  background: url(images/down-arrow.svg) no-repeat center;
+  background-size: 10px 10px;
+  height: 10px;
+  width: 10px;
+  border-bottom: none;
+}
+
+/* Main Aside */
+
+.main {
+  align-items: center;
+  box-shadow: 0px 0px 1px #000;
+  color: #9BA6B8;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  height: 20%;
+  width: 100%;
+}
+
+.main p {
+  align-items: center;
+  display: flex;
+  height: calc(100% / 6);
+  padding: 10px;
+  width: 100%;
+}
+
+.main a {
+  align-items: center;
+  background-size: 20px;
+  border-bottom: none;
+  color: #9BA6B8;
+  display: flex;
+  height: calc(100% / 6);
+  padding: 0 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* Admin */
+
+.admin {
+  align-items: center;
+  box-shadow: 0px 0px 1px #000;
+  color: #9BA6B8;
+  display: flex;
+  flex-wrap: wrap;
+  height: 20%;
+  width: 100%;
+}
+
+.admin p {
+  align-items: center;
+  display: flex;
+  height: calc(100% / 6);
+  padding: 10px;
+  width: 100%;
+}
+
+.admin a {
+  align-items: center;
+  background-size: 20px;
+  border-bottom: none;
+  color: #9BA6B8;
+  display: flex;
+  height: calc(100% / 6);
+  padding: 0 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* Categories */
+
+.categories {
+  box-shadow: 0px 0px 1px #000;
+  color: #9BA6B9;
+  display: flex;
+  flex-wrap: wrap;
+  height: 45%;
+  width: 100%;
+}
+
+.categories p {
+  align-items: center;
+  display: flex;
+  height: 10%;
+  padding: 10px;
+  width: 100%;
+}
+
+.categories form {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40%;
+  width: 100%;
+}
+
+.categories input {
+  display: flex;
+  margin: 20px 10px 20px 20px;
+  width: 10%;
+}
+.categories label {
+  align-items: center;
+  color: #9BA6B8;
+  display: flex;
+  margin: 0;
+  width: 70%;
+  height: 25%;
+}
 
 /* Background Images */
+
 .menu {
   background: url(images/menu.svg) no-repeat center;
-  background-size: 20px 20px;
+  background-size: 20px;
 }
 
 .add-user {
   background: url(images/add-user.svg) no-repeat center;
-  background-size: 25px 25px;
+  background-size: 25px;
   background-color: #139FF5
 }
-.calendar {
+.notifications {
   background: url(images/calendar.svg) no-repeat center;
-  background-size: 20px 20px;
+  background-size: 20px;
 }
 .more-options {
   background: url(images/more-options.svg) no-repeat center;
-  background-size: 20px 20px;
+  background-size: 20px;
+}
+
+.home {
+  background: url(images/home.svg) no-repeat 10% 40%;
+}
+
+.jobs {
+  background: url(images/jobs.svg) no-repeat  10% 40%;
+}
+
+.resumes {
+  background: url(images/resume.svg) no-repeat 10% 40%;
+}
+
+.tasks {
+  background: url(images/tasks.svg) no-repeat 10% 40%;
+}
+
+.calendar {
+  background: url(images/menu-calendar.svg) no-repeat 10% 40%;
+}
+
+.users {
+  background: url(images/users.svg) no-repeat 10% 40%;
+}
+
+.locations {
+  background: url(images/locations.svg) no-repeat 10% 40%;
+}
+
+.workflows {
+  background: url(images/workflows.svg) no-repeat 10% 40%;
+}
+
+.job-boards {
+  background: url(images/job-boards.svg) no-repeat 10% 40%;
+}
+
+.social {
+  background: url(images/social.svg) no-repeat 10% 40%;
+}
+
+.open {
+  background:
+}
+
+.bookmark {
+  background:
+}
+
+.edit {
+  background:
+}
+
+.trash {
+  background:
 }
 
 /* Hovers */
 
-.calendar:hover {
+.top-nav a:hover {
   background-color: #139FF5;
-  background-image: url()
+}
+
+.main a:hover {
+  background-color: #30394A;
+  background-size: 20px;
+  color: white;
+}
+
+.admin a:hover {
+  background-color: #30394A;
+  background-size: 20px;
+  color: white;
+}
+
+form label:hover {
+  background-color: #30394A;
+}
+
+.notifications:hover {
+  background-image: url(images/white-calendar.svg)
 }
 
 .more-options:hover {
-  background-color: #139FF5
+  background-image: url(images/white-more-options.svg)
+}
+
+.home:hover {
+  background: #139FF5 url(images/white-home.svg) no-repeat 10% 40%;
+}
+
+.jobs:hover {
+  background: url(images/white-jobs.svg) no-repeat 10% 40%;
+}
+
+.resumes:hover {
+  background: url(images/white-resume.svg) no-repeat 10% 40%;
+}
+
+.tasks:hover {
+  background: url(images/white-tasks.svg) no-repeat 10% 40%;
+}
+
+.calendar:hover {
+  background: url(images/white-menu-calendar.svg) no-repeat 10% 40%;
+}
+
+.users:hover {
+  background: url(images/white-users.svg) no-repeat 10% 40%;
+}
+
+.locations:hover {
+  background: url(images/white-locations.svg) no-repeat 10% 40%;
+}
+
+.workflows:hover {
+  background: url(images/white-workflows.svg) no-repeat 10% 40%;
+}
+
+.job-boards:hover {
+  background: url(images/white-job-boards.svg) no-repeat 10% 40%;
+}
+
+.social:hover {
+  background: url(images/white-social.svg) no-repeat 10% 40%;
 }

@@ -4,24 +4,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="normalize.css" type="text/css" rel="stylesheet">
     <link href="styles.css" type="text/css" rel="stylesheet">
     <title>Static Comp 3</title>
   </head>
+
   <body>
     <aside>
-
+      <section class="current-user">
+        <figure>
+          <img src="images/user.jpg" alt="Image of current user">
+          <figcaption>Travis Rollins
+            <a class="arrow-down" href="#"></a>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="main">
+        <p>Main</p>
+        <a class="home" href="#">Home</a>
+        <a class="jobs" href="#">Jobs</a>
+        <a class="resumes" href="#">Resumes</a>
+        <a class="tasks" href="#">Tasks</a>
+        <a class="calendar" href="#">Calendar</a>
+      </section>
+      <section class="admin">
+        <p>Admin</p>
+        <a class="users" href="#">Users</a>
+        <a class="locations" href="#">Locations</a>
+        <a class="workflows" href="#">Workflows</a>
+        <a class="job-boards" href="#">Job Boards</a>
+        <a class="social" href="#">Social</a>
+      </section>
+      <section class="categories">
+        <p>Categories</p>
+        <form action="get">
+          <input type="checkbox" id="administrative" name="administrative" value="administrative">
+          <label for="administrative">Administrative</label>
+          <input type="checkbox" id="design" name="design" value="design">
+          <label for="design">Design</label>
+          <input type="checkbox" id="executive" name="executive" value="executive">
+          <label for="executive">Executive</label>
+          <input type="checkbox" id="human-resources" name="human-resources" value="human resources">
+          <label for="human-resources">Human Resources</label>
+        </form>
+      </section>
     </aside>
 
     <main>
       <header>
-        <nav>
+        <nav class="top-nav">
           <img src="images/left-arrow.svg" class="arrow" alt="Arrow pointing toward menu">
           <a class="menu" href="#"></a>
           <input type='search' id="search-bar" name="search" placeholder="Search for a job, task or resume">
           <a class="add-user" href="#"></a>
-          <a class="calendar" href="#"></a>
+          <a class="notifications" href="#"></a>
           <a class="more-options" href="#"></a>
+        </nav>
+        <section class="job-title">
+          <section class="job-title-options">
+            <h1>Customer Service Representative</h1>
+            <button class="open" type="button" name="open">Open</button>
+            <button class="bookmark" type="button" name="bookmark"></button>
+            <button class="edit" type="button" name="edit"></button>
+            <button class="trash" type="button" name="trash"></button>
+        </section>
+        <nav class="sub-nav">
         </nav>
       </header>
       <h1></h1>
