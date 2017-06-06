@@ -34,7 +34,7 @@ img {
 header {
   display: flex;
   flex-wrap: wrap;
-  height: 40vh;
+  height: 30vh;
   width: 100%;
 }
 
@@ -94,17 +94,19 @@ color: #BEC1C6;
   width: 10px;
 }
 
-.job-title {
+/* Job Options Header */
+
+h1 {
+  font-size: 40px;
+  font-weight: lighter;
   display: flex;
-  flex-wrap: wrap;
-  height: 33vh;
+  height: 30%;
+  margin: 35px 0 15px 0;
   width: 100%;
 }
 
-.job-title-options {
-  display: flex;
-  height: 50%;
-  width: 100%;
+.job-title-options article {
+  width: calc((100% / 3) * 2)
 }
 
 .job-title-options button {
@@ -112,13 +114,85 @@ color: #BEC1C6;
   border: 3px solid #DDD;
   border-radius: 50%;
   height: 40px;
+  margin: 0 10px;
   width: 40px;
 }
 
+.job-title-options .buttons {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% / 3)
+}
+
+.job-title {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25vh;
+  width: 100%;
+}
+
+.job-title-options {
+  display: flex;
+  height: calc((100% / 3)* 2);
+  margin: 0 40px;
+  width: 100%;
+}
+
+.job-title-options .open {
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 0 0 15px;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.location {
+  height: 40%;
+  width: 100%;
+}
+
+.location p {
+  color: #93969D;
+  display: inline;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.location a {
+  border-bottom: none;
+  color: #7BC5EC;
+  display: inline;
+  font-size: 16px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Sub Navigation */
+
 .sub-nav {
   display: flex;
-  height: 50%;
+  height: calc(100% / 3);
   width: 100%;
+}
+
+.sub-nav a {
+  align-items: center;
+  border-bottom: none;
+  color: #93969D;
+  font-size: 16px;
+  font-weight: bold;
+  height: 100%;
+  margin: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.sub-nav .summary {
+  margin-left: 30px;
 }
 
 /* Current User */
@@ -290,10 +364,12 @@ figcaption {
   background-size: 25px;
   background-color: #139FF5
 }
-.notifications {
+
+.schedule {
   background: url(images/calendar.svg) no-repeat center;
   background-size: 20px;
 }
+
 .more-options {
   background: url(images/more-options.svg) no-repeat center;
   background-size: 20px;
@@ -339,23 +415,39 @@ figcaption {
   background: url(images/social.svg) no-repeat 10% 40%;
 }
 
+.location {
+  background: url(images/location.svg) no-repeat 0% 40%, url(images/grey-dot.svg) no-repeat 52% 50%;
+  background-size: 15px, 5px;
+}
+
 .open {
-  background:
+  background: url(images/circle.svg) no-repeat 20% 50%;
+  background-size: 10px;
 }
 
 .bookmark {
-  background:
+  background: url(images/bookmark.svg) no-repeat center;
+  background-size: 15px;
+  cursor: pointer;
 }
 
 .edit {
-  background:
+  background: url(images/edit.svg) no-repeat center;
+  background-size: 15px;
+  cursor: pointer;
 }
 
 .trash {
-  background:
+  background: url(images/trash.svg) no-repeat center;
+  background-size: 15px;
+  cursor: pointer;
 }
 
 /* Hovers */
+
+form label:hover {
+  background-color: #30394A;
+}
 
 .top-nav a:hover {
   background-color: #139FF5;
@@ -373,11 +465,11 @@ figcaption {
   color: white;
 }
 
-form label:hover {
-  background-color: #30394A;
+.location a:hover {
+  text-decoration: underline;
 }
 
-.notifications:hover {
+.schedule:hover {
   background-image: url(images/white-calendar.svg)
 }
 
@@ -423,4 +515,32 @@ form label:hover {
 
 .social:hover {
   background: url(images/white-social.svg) no-repeat 10% 40%;
+}
+
+.job-title-options .open:hover {
+  background-color: #DDD;
+  color: white;
+}
+
+.bookmark:hover {
+  background: url(images/white-bookmark.svg) no-repeat center;
+  background-color: #DDD;
+  background-size: 15px;
+}
+
+.edit:hover {
+  background: url(images/white-edit.svg) no-repeat center;
+  background-color: #DDD;
+  background-size: 15px;
+}
+
+.trash:hover {
+  background: url(images/white-trash.svg) no-repeat center;
+  background-color: #DDD;
+  background-size: 15px;
+}
+
+.sub-nav a:hover {
+  border-bottom: 3px solid #139FF5;
+  color: #000;
 }
