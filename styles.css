@@ -27,7 +27,8 @@ main {
   background-color: #EDF2F6;
   border-top: 3px solid #DDD;
   display: flex;
-  height: 120vh;
+  flex-wrap: wrap;
+  height: 116vh;
   width: 100%;
 }
 
@@ -229,7 +230,7 @@ h1 {
   flex-wrap: wrap;
   font-size: 24px;
   height: 100%;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   width: 50%;
 }
@@ -248,6 +249,7 @@ h1 {
   display: flex;
   height: 150px;
   justify-content: center;
+  margin: 0 2%;
   transform: rotate(-45deg);
   width: 150px;
 }
@@ -264,6 +266,7 @@ h1 {
   display: flex;
   height: 150px;
   justify-content: center;
+  margin: 0 2%;
   transform: rotate(-90deg);
   width: 150px;
 }
@@ -279,6 +282,7 @@ h1 {
   border-radius: 50%;
   display: flex;
   height: 150px;
+  margin: 0 2%;
   justify-content: center;
   transform: rotate(-45deg);
   width: 150px;
@@ -294,7 +298,8 @@ h1 {
   border-radius: 25px;
   color: #4F5867;
   cursor: pointer;
-  display: flex;
+  display: block;
+  margin: 0 10%;
   font-size: 16px;
   height: 50px;
   justify-content: center;
@@ -316,9 +321,56 @@ h1 {
 }
 
 button.applicants-day {
+  margin-top: -50px;
   text-transform: uppercase;
   width: 200px;
 }
+
+/* Divider */
+
+hr {
+  width: 45%;
+}
+
+.divider button {
+  border: 2px solid #DDD;
+  border-radius: 50%;
+  background-color: #FFF;
+  cursor: pointer;
+  height: 40px;
+  margin: 10px;
+  width: 40px;
+}
+
+.divider {
+  align-items: center;
+  display: flex;
+  height: 5%;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Second Main Section */
+
+.second-main {
+  display: flex;
+  height: calc((100% / 3) * 2 - 5%);
+  width: 100%;
+}
+
+.resume-section {
+  display: flex;
+  height: 100%;
+  width: calc((100% / 3) * 2)
+}
+
+.social-section {
+  display: flex;
+  height: 100%;
+  width: calc(100% / 3)
+}
+
+
 
 /* Current User */
 
@@ -434,8 +486,6 @@ figcaption {
 .categories {
   box-shadow: 0px 0px 1px #000;
   color: #9BA6B9;
-  display: flex;
-  flex-wrap: wrap;
   height: 45%;
   width: 100%;
 }
@@ -451,13 +501,15 @@ figcaption {
 .categories form {
   display: flex;
   flex-wrap: wrap;
-  height: 40%;
+  height: 50%;
   width: 100%;
 }
 
 .categories input {
+  align-items: center;
   display: flex;
-  margin: 20px 10px 20px 20px;
+  height: 10%;
+  margin: 0 15px;
   width: 10%;
 }
 .categories label {
@@ -466,7 +518,7 @@ figcaption {
   display: flex;
   margin: 0;
   width: 70%;
-  height: 25%;
+  height: 10%;
 }
 
 /* Background Images */
@@ -558,6 +610,11 @@ figcaption {
   background: url(images/trash.svg) no-repeat center;
   background-size: 15px;
   cursor: pointer;
+}
+
+.minimize {
+  background: url(images/up-arrow.svg) no-repeat center;
+  background-size: 15px;
 }
 
 /* Hovers */
@@ -665,4 +722,10 @@ form label:hover {
 .graph-section button:hover {
   background-color: #DDD;
   color: #FFF;
+}
+
+.divider button:hover {
+  background: url(images/white-up-arrow.svg) no-repeat center;
+  background-color: #DDD;
+  background-size: 15px;
 }
