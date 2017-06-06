@@ -15,9 +15,20 @@ body {
   margin: 0;
 }
 
-main {
+aside {
+  background-color: #354052;
   display: flex;
+  flex-wrap: wrap;
   height: 150vh;
+  width: 250px;
+}
+
+main {
+  background-color: #EDF2F6;
+  border-top: 3px solid #DDD;
+  display: flex;
+  flex-wrap: wrap;
+  height: 116vh;
   width: 100%;
 }
 
@@ -29,12 +40,19 @@ img {
   width: 25px;
 }
 
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 150vh;
+  width: 100%;
+}
+
 /* Top Navigation */
 
 header {
   display: flex;
   flex-wrap: wrap;
-  height: 30vh;
+  height: 33vh;
   width: 100%;
 }
 
@@ -128,7 +146,7 @@ h1 {
 .job-title {
   display: flex;
   flex-wrap: wrap;
-  height: 25vh;
+  height: 26vh;
   width: 100%;
 }
 
@@ -192,18 +210,169 @@ h1 {
 }
 
 .sub-nav .summary {
+  border-bottom: 3px solid #139FF5;
+  color: #000;
   margin-left: 30px;
 }
 
-/* Current User */
+/* Graphs Section */
 
-aside {
-  background-color: #354052;
+.graph-section {
+  display: flex;
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+.circle-graphs {
+  align-items: center;
+  color: #4F5867;
   display: flex;
   flex-wrap: wrap;
-  height: 150vh;
+  font-size: 24px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.circle-graphs p {
+  color: #93969D;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.applicants-graph {
+  align-items: center;
+  border: 10px solid #000;
+  border-color: #4CBCBF #4CBCBF #DBE4E9 #4CBCBF;
+  border-radius: 50%;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 0 2%;
+  transform: rotate(-45deg);
+  width: 150px;
+}
+
+.applicants-graph div {
+  transform: rotate(45deg);
+}
+
+.interviews-graph {
+  align-items: center;
+  border: 10px solid #000;
+  border-color: #14A0FE #DBE4E9 #DBE4E9 #14A0FE;
+  border-radius: 50%;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 0 2%;
+  transform: rotate(-90deg);
+  width: 150px;
+}
+
+.interviews-graph div {
+  transform: rotate(90deg);
+}
+
+.forwards-graph {
+  align-items: center;
+  border: 10px solid #000;
+  border-color: #DBE4E9 #DBE4E9 #DBE4E9 #B369B2;
+  border-radius: 50%;
+  display: flex;
+  height: 150px;
+  margin: 0 2%;
+  justify-content: center;
+  transform: rotate(-45deg);
+  width: 150px;
+}
+
+.forwards-graph div {
+  transform: rotate(45deg);
+}
+
+.graph-section button {
+  background-color: #FFF;
+  border: 2px solid #DDD;
+  border-radius: 25px;
+  color: #4F5867;
+  cursor: pointer;
+  display: block;
+  margin: 0 10%;
+  font-size: 16px;
+  height: 50px;
+  justify-content: center;
   width: 250px;
 }
+
+.bar-graph {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+
+.bar-graph img {
+  width: 80%;
+  height: 60%;
+}
+
+button.applicants-day {
+  margin-top: -50px;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+/* Divider */
+
+hr {
+  width: 45%;
+}
+
+.divider button {
+  border: 2px solid #DDD;
+  border-radius: 50%;
+  background-color: #FFF;
+  cursor: pointer;
+  height: 40px;
+  margin: 10px;
+  width: 40px;
+}
+
+.divider {
+  align-items: center;
+  display: flex;
+  height: 5%;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Second Main Section */
+
+.second-main {
+  display: flex;
+  height: calc((100% / 3) * 2 - 5%);
+  width: 100%;
+}
+
+.resume-section {
+  display: flex;
+  height: 100%;
+  width: calc((100% / 3) * 2)
+}
+
+.social-section {
+  display: flex;
+  height: 100%;
+  width: calc(100% / 3)
+}
+
+
+
+/* Current User */
 
 .current-user {
   box-shadow: 0px 0px 5px #000;
@@ -317,8 +486,6 @@ figcaption {
 .categories {
   box-shadow: 0px 0px 1px #000;
   color: #9BA6B9;
-  display: flex;
-  flex-wrap: wrap;
   height: 45%;
   width: 100%;
 }
@@ -334,13 +501,15 @@ figcaption {
 .categories form {
   display: flex;
   flex-wrap: wrap;
-  height: 40%;
+  height: 50%;
   width: 100%;
 }
 
 .categories input {
+  align-items: center;
   display: flex;
-  margin: 20px 10px 20px 20px;
+  height: 10%;
+  margin: 0 15px;
   width: 10%;
 }
 .categories label {
@@ -349,7 +518,7 @@ figcaption {
   display: flex;
   margin: 0;
   width: 70%;
-  height: 25%;
+  height: 10%;
 }
 
 /* Background Images */
@@ -441,6 +610,11 @@ figcaption {
   background: url(images/trash.svg) no-repeat center;
   background-size: 15px;
   cursor: pointer;
+}
+
+.minimize {
+  background: url(images/up-arrow.svg) no-repeat center;
+  background-size: 15px;
 }
 
 /* Hovers */
@@ -543,4 +717,15 @@ form label:hover {
 .sub-nav a:hover {
   border-bottom: 3px solid #139FF5;
   color: #000;
+}
+
+.graph-section button:hover {
+  background-color: #DDD;
+  color: #FFF;
+}
+
+.divider button:hover {
+  background: url(images/white-up-arrow.svg) no-repeat center;
+  background-color: #DDD;
+  background-size: 15px;
 }
