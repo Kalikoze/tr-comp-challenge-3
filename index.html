@@ -54,7 +54,6 @@
     <section class="main-section">
       <header>
         <nav class="top-nav">
-          <img src="images/left-arrow.svg" class="arrow" alt="Arrow pointing toward menu">
           <a class="menu" href="#"></a>
           <input type='search' id="search-bar" name="search" placeholder="Search for a job, task or resume">
           <a class="add-user" href="#"></a>
@@ -80,7 +79,7 @@
           <nav class="sub-nav">
             <a class="summary" href="#">Summary</a>
             <a class="applicants" href="#">Applicants</a>
-            <a class="job-board" href="#">Job Board</a>
+            <a class="job-board" href="#">Job&nbsp;Board</a>
             <a class="interviews" href="#">Interviews</a>
             <a class="activity" href="#">Activity</a>
             <a class="broadcast" href="#">Broadcast</a>
@@ -88,6 +87,7 @@
           </nav>
         </section>
       </header>
+
       <main>
         <section class="graph-section">
           <div class="circle-graphs">
@@ -121,10 +121,88 @@
           <button class="minimize" type="button" name-"minimize"></button>
           <hr>
         </div>
+
         <div class="second-main">
-          <section class="resume-section">
+          <section class="job-description">
+            <table>
+              <thead>
+                <tr>
+                  <th>Job Description</th>
+                  <td>
+                    <button class="edit-job" type="button" name="edit-job">Edit</button>
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Position Title</th>
+                  <td>Customer Service Representative</td>
+                </tr>
+                <tr>
+                  <th>Location</th>
+                  <td>San Francisco, CA</td>
+                </tr>
+                <tr>
+                  <th>Employment Type</th>
+                  <td>Full-time</td>
+                </tr>
+                <tr>
+                  <th>Experience</th>
+                  <td>Mid-level</td>
+                </tr>
+                <tr>
+                  <th>Status</th>
+                  <td>Open</td>
+                </tr>
+                <tr class="description">
+                  <th>Description</th>
+                  <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all customers, responsible for keeping up-to-date on the various products available.</td>
+                </tr>
+                <tr>
+                  <th>Hiring Lead</th>
+                  <td><img src="images/dr-dre.jpg" alt="Image of the hiring lead, Dr Dre.">Dr Dre</td>
+                </tr>
+                <tr>
+                  <th>Approved Salary</th>
+                  <td>$58,000</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
+
           <section class="social-section">
+            <section class="social-buttons">
+              <button class="facebook" type="button" name="facebook">Post to Facebook</button>
+              <button class="twitter" type="button" name="twitter">Tweet this Job</button>
+              <button class="linkedin" type="button" name="linkedin">Post to Linkedin</button>
+            </section>
+
+            <section class="social-widget-section">
+              <article class="social-widget">
+                <h3 class="link">Link to this Job</h3>
+                  <p>Lorem ipsum dolor sit amet, consectbur adipis cing elit.  Integer mollis neque eget vestibgend.</p>
+                  <form class="widget-form" action="index.html" method="post">
+                    <input class="widget-input" type="text" name="link" placeholder="https://www.beatsbydre.com/">
+                    <button class="copy-btn" type="button" name="copy">Copy</button>
+                  </form>
+              </article>
+              <article class="social-widget">
+                <h3 class="script">Use the Button Widget</h3>
+                <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+                <form class="widget-form" action="index.html" method="post">
+                  <input class="widget-input" type="text" name="script" placeholder="<script type='text/javascript' src='scripts.js'</script>">
+                  <button class="copy-btn" type="button" name="copy">Copy</button>
+                </form>
+              </article>
+              <article class="social-widget">
+                <h3 class="email">Upload Resumes by Email</h3>
+                <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
+                <form class="widget-form" action="index.html" method="post">
+                  <input class="widget-input no-copy-input" type="text" name="email" placeholder="drdre@gmail.com">
+                  </form>
+              </article>
+            </section>
+
           </section>
         </div>
       </main>
