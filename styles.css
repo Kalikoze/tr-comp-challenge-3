@@ -145,7 +145,7 @@ h1 {
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  width: calc(100% / 3)
+  width: 500px;
 }
 
 .job-title {
@@ -218,6 +218,10 @@ h1 {
   border-bottom: 3px solid #139FF5;
   color: #000;
   margin-left: 30px;
+}
+
+.more {
+  display: none;
 }
 
 /* Graphs Section */
@@ -961,4 +965,206 @@ button.linkedin:hover {
 
 /* Media Queries */
 
-@media (max-width: 1300px)
+@media (max-width: 1250px) {
+
+  aside {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .more {
+    display: inherit;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .applicants-graph div {
+    padding-top: 200px;
+  }
+
+  .interviews-graph div {
+    padding-top: 200px;
+  }
+
+  .forwards-graph div {
+    padding-top: 200px;
+  }
+
+  .applicants-graph {
+    border-width: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .interviews-graph {
+    border-width: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .forwards-graph {
+    border-width: 20px;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 950px) {
+
+  h1 {
+    justify-content: center;
+  }
+
+  div.second-main {
+    background-color: #ECF2F6;
+    height: 200vh;
+    flex-wrap: wrap;
+  }
+
+  section.job-description {
+    height: 50%;
+    width: 100%
+  }
+
+  section.social-section {
+    height: 50%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .job-title-options article {
+    text-align: center;
+    width: 100%;
+  }
+
+  .sub-nav a {
+    justify-content: center;
+    width: 25%;
+  }
+
+  .job-title-options {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .job-title-options .buttons {
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hidden2 {
+    display: none;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .graph-section {
+    flex-wrap: wrap;
+    height: 700px;
+  }
+
+  .circle-graphs {
+    height: 50%;
+    width: 100%;
+  }
+
+  .bar-graph {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  th {
+    font-size: 12px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  button.edit-job {
+    height: 20px;
+    font-size: 10px;
+    width: 50px;
+  }
+
+  .sub-nav a {
+    font-size: 12px;
+  }
+
+  .social-widget h3  {
+    font-size: 20px;
+  }
+
+  .social-widget p {
+    font-size: 12px;
+  }
+
+  .circle-graphs {
+    height: ((100% / 3) * 2)
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .bar-graph {
+    height: (100% / 3);
+  }
+
+  .applicants-graph {
+    border-width: 10px;
+    height: 50px;
+    margin-top: 75px;
+    width: 50px;
+  }
+
+  .interviews-graph {
+    border-width: 10px;
+    height: 50px;
+    margin-top: 75px;
+    width: 50px;
+  }
+
+  .forwards-graph {
+    border-width: 10px;
+    height: 50px;
+    margin-top: 75px;
+    width: 50px;
+  }
+
+  .applicants-graph div {
+    font-size: .5em;
+    padding-top: 100px;
+  }
+
+  .interviews-graph div {
+    font-size: .5em;
+    padding-top: 100px;
+  }
+
+  .forwards-graph div {
+    font-size: .5em;
+    padding-top: 100px;
+  }
+
+  .widget-input {
+    height: 25px;
+  }
+
+  .copy-btn {
+    height: 25px;
+  }
+}
