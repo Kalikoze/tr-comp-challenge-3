@@ -541,6 +541,7 @@ button.linkedin {
   background-color: #00BDC1;
   border: none;
   color: #FFF;
+  cursor: pointer;
   font-weight: lighter;
   height: 45px;
   justify-content: center;
@@ -828,10 +829,6 @@ figcaption {
 
 /* Hovers */
 
-form label:hover {
-  background-color: #30394A;
-}
-
 .top-nav a:hover {
   background-color: #139FF5;
 }
@@ -853,7 +850,7 @@ form label:hover {
 }
 
 .menu:hover {
-  background-image: url(images/white-menu.svg)
+  background-image: url(images/white-left-arrow.svg), url(images/white-menu.svg);
 }
 
 .add-user:hover {
@@ -961,6 +958,10 @@ button.twitter:hover {
 
 button.linkedin:hover {
   background-color: #1F94BA;
+}
+
+.copy-btn:hover {
+  background-color: #207C81;
 }
 
 /* Media Queries */
