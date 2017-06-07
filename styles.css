@@ -19,7 +19,7 @@ aside {
   background-color: #354052;
   display: flex;
   flex-wrap: wrap;
-  height: 150vh;
+  height: 200vh;
   width: 250px;
 }
 
@@ -28,7 +28,7 @@ main {
   border-top: 3px solid #DDD;
   display: flex;
   flex-wrap: wrap;
-  height: 116vh;
+  height: 167vh;
   width: 100%;
 }
 
@@ -71,6 +71,11 @@ a {
   width: 60px;
 }
 
+.schedule {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
 #search-bar {
   height: 7vh;
   width: 100%;
@@ -81,7 +86,7 @@ a {
 color: #BEC1C6;
 }
 
-i#search-bar:-moz-placeholder { /* Firefox 18- */
+#search-bar:-moz-placeholder { /* Firefox 18- */
 color: #BEC1C6;
 }
 
@@ -219,7 +224,7 @@ h1 {
 
 .graph-section {
   display: flex;
-  height: calc(100% / 3);
+  height: 25%;
   width: 100%;
 }
 
@@ -321,7 +326,7 @@ h1 {
 }
 
 button.applicants-day {
-  margin-top: -50px;
+  margin-top: -65px;
   text-transform: uppercase;
   width: 200px;
 }
@@ -354,23 +359,189 @@ hr {
 
 .second-main {
   display: flex;
-  height: calc((100% / 3) * 2 - 5%);
+  align-items: center;
+  height: 70%;
   width: 100%;
 }
 
-.resume-section {
+.job-description {
+  align-items: center;
   display: flex;
   height: 100%;
+  justify-content: center;
   width: calc((100% / 3) * 2)
 }
 
 .social-section {
   display: flex;
-  height: 100%;
-  width: calc(100% / 3)
+  flex-wrap: wrap;
+  height: 95%;
+  width: calc(100% / 3);
 }
 
+/* Job Description */
 
+table {
+  background-color: #FFF;
+  border-collapse: collapse;
+  display: flex;
+  flex-wrap: wrap;
+  height: 95%;
+  width: 90%;
+}
+
+thead {
+  background-color: #6C7E97;
+  height: 10%;
+  width: 100%;
+}
+
+tbody {
+  height: 90%;
+  width: 100%;
+}
+
+thead th {
+  color: #FFF;
+}
+
+thead tr {
+  border-bottom: none;
+  height: 100%;
+}
+
+tr {
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  height: calc(100% / 9);
+  justify-content: center;
+  margin: 0 5%;
+  width: 90%;
+}
+
+th {
+  color: #6C7E97;
+  margin-left: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 250px;
+}
+
+td {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  width: 75%;
+}
+
+td img {
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+button.edit-job {
+  background-color: #7A8BA9;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: lighter;
+  height: 35px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  width: 85px;
+}
+
+.description {
+  height: calc((100% / 9) * 2);
+}
+
+/* Social Section */
+
+.social-buttons button {
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: lighter;
+  height: 40px;
+  width: 100%;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25%;
+  justify-content: center;
+  width: 90%;
+}
+
+button.facebook {
+  background-color: #436CCB;
+}
+
+button.twitter {
+  background-color: #00AAF6;
+}
+
+button.linkedin {
+  background-color: #0080C1;
+}
+
+/* Social Widgets */
+
+.social-widget * {
+  color: #4F5867;
+  display: flex;
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+.social-widget h3 {
+  align-items: center;
+  font-size: 24px;
+  padding-left: 30px;
+}
+
+.social-widget p {
+  font-size: 16px;
+}
+
+.social-widget-section {
+  height: 75%;
+  width: 90%;
+}
+
+.social-widget {
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100% / 3);
+}
+
+.widget-input {
+  height: 45px;
+  width: 87%;
+}
+
+.no-copy-input {
+  width: 100%;
+}
+
+.copy-btn {
+  background-color: #00BDC1;
+  border: none;
+  color: #FFF;
+  font-weight: lighter;
+  height: 45px;
+  justify-content: center;
+  width: 60px;
+}
 
 /* Current User */
 
@@ -501,7 +672,7 @@ figcaption {
 .categories form {
   display: flex;
   flex-wrap: wrap;
-  height: 50%;
+  height: 30%;
   width: 100%;
 }
 
@@ -524,14 +695,13 @@ figcaption {
 /* Background Images */
 
 .menu {
-  background: url(images/menu.svg) no-repeat center;
-  background-size: 20px;
+  background: url(images/left-arrow.svg) no-repeat 12% 50%, url(images/menu.svg) no-repeat center;
+  background-size: 10px, 20px;
 }
 
 .add-user {
   background: url(images/add-user.svg) no-repeat center;
   background-size: 25px;
-  background-color: #139FF5
 }
 
 .schedule {
@@ -617,6 +787,41 @@ figcaption {
   background-size: 15px;
 }
 
+.edit-job {
+  background: url(images/white-edit.svg) no-repeat 20% 45%;
+  background-size: 10px;
+}
+
+.facebook {
+  background: url(images/facebook-logo.svg) no-repeat 20% 50%;
+  background-size: 15px;
+}
+
+.twitter {
+  background: url(images/twitter-logo.svg) no-repeat 20% 50%;
+  background-size: 15px;
+}
+
+.linkedin {
+  background: url(images/linkedin-logo.svg) no-repeat 20% 50%;
+  background-size: 15px;
+}
+
+.link {
+  background: url(images/earth.svg) no-repeat 0 49%;
+  background-size: 20px;
+}
+
+.script {
+  background: url(images/script.svg) no-repeat 0 49%;
+  background-size: 20px;
+}
+
+.email {
+  background: url(images/email.svg) no-repeat 0 49%;
+  background-size: 20px;
+}
+
 /* Hovers */
 
 form label:hover {
@@ -641,6 +846,14 @@ form label:hover {
 
 .location a:hover {
   text-decoration: underline;
+}
+
+.menu:hover {
+  background-image: url(images/white-menu.svg)
+}
+
+.add-user:hover {
+  background-image: url(images/white-add-user.svg);
 }
 
 .schedule:hover {
@@ -729,3 +942,23 @@ form label:hover {
   background-color: #DDD;
   background-size: 15px;
 }
+
+button.edit-job:hover {
+  background-color: #8A9AB1
+}
+
+button.facebook:hover {
+  background-color: #6989C8;
+}
+
+button.twitter:hover {
+  background-color: #37C8F0;
+}
+
+button.linkedin:hover {
+  background-color: #1F94BA;
+}
+
+/* Media Queries */
+
+@media (max-width: 1300px)
