@@ -1114,34 +1114,28 @@ button.linkedin:hover {
     font-size: 12px;
   }
 
-  .circle-graphs {
-    height: ((100% / 3) * 2)
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .bar-graph {
-    height: (100% / 3);
+  .graph-section {
+    height: 50vh;
   }
 
   .applicants-graph {
     border-width: 10px;
     height: 50px;
-    margin-top: 75px;
+    margin: 0 20px;
     width: 50px;
   }
 
   .interviews-graph {
     border-width: 10px;
     height: 50px;
-    margin-top: 75px;
+    margin: 0 20px;
     width: 50px;
   }
 
   .forwards-graph {
     border-width: 10px;
     height: 50px;
-    margin-top: 75px;
+    margin: 0 20px;
     width: 50px;
   }
 
@@ -1160,11 +1154,47 @@ button.linkedin:hover {
     padding-top: 100px;
   }
 
+  button.totals {
+    margin-top: 50px;
+    font-size: 12px;
+    height: 30px;
+  }
+
+  button.applicants-day {
+    font-size: 12px;
+    height: 30px;
+    margin-top: 0;
+  }
+
   .widget-input {
     height: 25px;
   }
 
   .copy-btn {
     height: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .location p, .location a {
+    font-size: 12px;
+  }
+
+  .sub-nav {
+    display: none;
+  }
+
+  .buttons {
+    height: 50%;
+  }
+
+  .buttons button {
+    height: 30px;
+    width: 30px;
   }
 }
