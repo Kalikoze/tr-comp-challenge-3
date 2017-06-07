@@ -1155,6 +1155,7 @@ button.linkedin:hover {
   }
 
   button.totals {
+    margin-top: 50px;
     font-size: 12px;
     height: 30px;
   }
@@ -1171,5 +1172,29 @@ button.linkedin:hover {
 
   .copy-btn {
     height: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .location p, .location a {
+    font-size: 12px;
+  }
+
+  .sub-nav {
+    display: none;
+  }
+
+  .buttons {
+    height: 50%;
+  }
+
+  .buttons button {
+    height: 30px;
+    width: 30px;
   }
 }
